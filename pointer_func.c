@@ -27,7 +27,7 @@ int main(void)
 {
     int i;
     A *a = NULL;
-    //a->len=1;
+    //a->len=1; //指针分配空间后才能对其操作
     func(&a);
     a->len = 1;
     a->list = (List *)malloc(sizeof(List));
